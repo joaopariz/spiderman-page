@@ -85,9 +85,6 @@ header {
 }
 
 @media (max-width: 800px) {
-  .nav-bar {
-    padding: 1.5rem 4rem;
-  }
   .nav-item {
     display: none;
   }
@@ -127,28 +124,40 @@ header {
 
 /* Main */
 
-.container {
+.introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  gap: 0px 40px;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-content {
-  grid-column: 1;
-  margin-left: 160px;
+  align-self: end;
+  margin-top: 200px;
 }
 
-.main-content p {
-  font-family: "Montserrat", sans-serif;
-  max-width: 50ch;
-  font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 1.2;
+.logo-game {
+  margin-bottom: 32px;
+}
+
+.introducao p {
+  font: 500 1.125rem/1.5 "Montserrat", sans-serif;
+  letter-spacing: 0.015em;
   margin-bottom: 20px;
 }
 
-.buttons-content {
+.buttons {
   display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
@@ -157,10 +166,7 @@ header {
   background: #e01e2e;
   border-radius: 4px;
   padding: 10px 80px;
-}
-
-.button-cta a {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
@@ -173,10 +179,7 @@ header {
   background: transparent;
   border-radius: 4px;
   padding: 10px 80px;
-}
-
-.button-sec a {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
@@ -184,19 +187,36 @@ header {
   color: #0159c7;
 }
 
-.image-content {
-  grid-column: 2;
+.spider-figure {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 100px;
 }
 
-@media (max-width: 1000px) {
-  .container {
+@media (max-width: 800px) {
+  .introducao {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+  .button-cta {
+    font-size: 1rem;
+    padding: 12px 50px;
+  }
+  .button-sec {
+    font-size: 1rem;
+    padding: 12px 50px;
   }
   .main-content {
-    grid-column: 1;
-    margin-left: 0;
+    margin-top: 50px;
   }
-  .image-content {
-    grid-column: 1;
+  .logo-game {
+    margin-bottom: 0;
+  }
+  .spider-figure {
+    margin-top: 0px;
   }
 }
