@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 /* Header */
 
 header {
@@ -85,11 +81,18 @@ header {
 }
 
 @media (max-width: 800px) {
+  .nav-bar {
+    padding: 16px 32px;
+  }
   .nav-item {
     display: none;
   }
   .button-login {
     display: none;
+  }
+  .nav-link,
+  .button-login button a {
+    font-size: 1rem;
   }
   .mobile-menu-icon {
     display: block;
@@ -146,18 +149,19 @@ header {
 
 .logo-game {
   margin-bottom: 32px;
+  width: 100%;
 }
 
 .introducao p {
-  font: 500 1.125rem/1.5 "Montserrat", sans-serif;
+  font: 500 1rem/1.5 "Montserrat", sans-serif;
   letter-spacing: 0.015em;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
@@ -165,7 +169,7 @@ header {
   border: none;
   background: #e01e2e;
   border-radius: 4px;
-  padding: 10px 80px;
+  padding: 10px 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
@@ -178,13 +182,31 @@ header {
   border: 1px solid #0159c7;
   background: transparent;
   border-radius: 4px;
-  padding: 10px 80px;
+  padding: 10px 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #0159c7;
+}
+
+@media (max-width: 1200px) {
+  .button-cta,
+  .button-sec {
+    font-size: 1rem;
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .button-cta,
+  .button-sec {
+    padding: 10px 40px;
+  }
+  .introducao p {
+    font-size: 0.875rem;
+  }
 }
 
 .spider-figure {
@@ -200,15 +222,15 @@ header {
     gap: 32px;
   }
   .buttons {
-    gap: 10px;
+    gap: 20px;
   }
   .button-cta {
     font-size: 1rem;
-    padding: 12px 50px;
+    padding: 12px 40px;
   }
   .button-sec {
     font-size: 1rem;
-    padding: 12px 50px;
+    padding: 12px 40px;
   }
   .main-content {
     margin-top: 50px;
@@ -218,5 +240,19 @@ header {
   }
   .spider-figure {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .buttons {
+    gap: 10px;
+  }
+  .button-cta,
+  .button-sec {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+  }
+  .introducao p {
+    font-size: 0.75rem;
   }
 }
