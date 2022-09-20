@@ -189,6 +189,12 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   color: #0159c7;
+  transition: 0.5s;
+}
+
+.button-sec:hover {
+  background: #0159c7;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
