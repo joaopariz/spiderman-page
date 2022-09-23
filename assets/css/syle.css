@@ -49,11 +49,16 @@ header {
   font-size: 1rem;
   line-height: 1.25;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: #0159c7;
 }
 
 .button-login button {
   border: none;
-  background: #e01e2e;
+  background: #df1b20;
   border-radius: 4px;
   padding: 10px 30px;
   transition: 0.5s;
@@ -66,7 +71,7 @@ header {
 .button-login button a {
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -167,7 +172,7 @@ header {
 
 .button-cta {
   border: none;
-  background: #e01e2e;
+  background: #df1b20;
   border-radius: 4px;
   padding: 10px 60px;
   font-family: "Montserrat", sans-serif;
@@ -176,6 +181,11 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+  transition: 0.5s;
+}
+
+.button-cta:hover {
+  background: #bb222f;
 }
 
 .button-sec {
